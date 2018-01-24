@@ -1,0 +1,13 @@
+table {
+	width:70%;
+	text-align:center;
+	margin-right:auto;
+	margin-left :auto;
+}
+td {
+	margin-top:30px;
+}
+#mapid { height: 180px; }
+.hidden {
+	display:none;
+}
