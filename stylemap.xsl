@@ -42,7 +42,15 @@
 			
 <script>
 	L.circleMarker([<xsl:value-of select="@lat"/>,<xsl:value-of select="@lng"/>]).addTo(mymap)
-		.bindPopup("<b> <xsl:value-of select="@address"/></b><br />").openPopup();
+		.bindPopup('<xsl:value-of select ="@name"/>	
+		<xsl:element name="iframe">
+        <xsl:attribute name="class">cf</xsl:attribute>  
+        <xsl:attribute name="width">300</xsl:attribute>
+        <xsl:attribute name="height">90</xsl:attribute>
+        <xsl:attribute name="src">./dispo.php?id=<xsl:value-of select="@number"/></xsl:attribute>
+        <xsl:attribute name="frameborder">0</xsl:attribute>
+        <xsl:comment/>
+    </xsl:element>').openPopup();
 </script>
 		</xsl:template>
 

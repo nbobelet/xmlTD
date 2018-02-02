@@ -31,7 +31,6 @@ $myloc->addChild("latitude",$gps[0]);
 $myloc->addChild("longitude",$gps[1]);
 $xsl2 = new DOMDocument;
 $xsl2->load('stylemap.xsl');
-
 $proc2 = new XSLTProcessor;
 $proc2->importStyleSheet($xsl2); // attachement des règles xsl
 ?>
